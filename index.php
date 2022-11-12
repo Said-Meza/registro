@@ -4,7 +4,7 @@
     require "config.php";
     require "phpqrcode/qrlib.php"; 
     require __DIR__."/vendor/autoload.php";
-    
+    ob_start();
     use Dompdf\Dompdf;
     use Dompdf\Options;
 
