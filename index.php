@@ -8,7 +8,7 @@
     
     use Dompdf\Dompdf;
     use Dompdf\Options;
-
+    $filename='';
 if ($_POST) {
     
     $txtnombre = (isset($_POST['txtnombre'])) ? $_POST['txtnombre'] : "";
