@@ -1,6 +1,7 @@
 
 
 <?php
+    $html =ob_get_clean();
     require "config.php";
     require "phpqrcode/qrlib.php"; 
     require __DIR__."/vendor/autoload.php";
@@ -36,7 +37,7 @@ if ($_POST) {
       
      
      //guarda en la base de datos
-        $html ='';
+        
 
          //Mostramos la imagen generada
 
@@ -58,7 +59,7 @@ if ($_POST) {
 
         $nombre="$txtnombre.pdf";
                                                     
-        $dompdf -> stream($nombre); //, ["Attachment"=> 0]
+        $dompdf -> stream($nombre, ["Attachment"=> 0]);
 
 
 }
