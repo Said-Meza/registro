@@ -36,7 +36,7 @@ if ($_POST) {
        //guarda en la base de datos
 
 
-        $html ='<h1>Example</h1>';
+        $html ='';
 
          //Mostramos la imagen generada
 
