@@ -4,7 +4,7 @@
     require "config.php";
     require "phpqrcode/qrlib.php"; 
     require __DIR__."/vendor/autoload.php";
-    ob_start();
+    
     use Dompdf\Dompdf;
     use Dompdf\Options;
 
@@ -33,9 +33,9 @@ if ($_POST) {
      $contenido= 'Aceptado Gracias por Venir:|'.$txtnombre.'|'.$txtcarrera;
 
      QRcode::png($contenido,$filename,$level,$tamanio);
-       //guarda en la base de datos
-
-
+      
+     
+     //guarda en la base de datos
         $html ='';
 
          //Mostramos la imagen generada
@@ -58,7 +58,7 @@ if ($_POST) {
 
         $nombre="$txtnombre.pdf";
                                                     
-        $dompdf -> stream($nombre, ["Attachment"=> 0]);
+        $dompdf -> stream($nombre); //, ["Attachment"=> 0]
 
 
 }
