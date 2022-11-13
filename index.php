@@ -61,7 +61,7 @@ if ($_POST) {
                                                     
         $dompdf -> stream($nombre, ["Attachment"=> 0]);
 
-ob_start();
+    exit;
 }
     
 

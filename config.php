@@ -3,10 +3,7 @@
 use LDAP\Result;
 
 class Conexion
-{       //INSERT INTO t_estudiantes (Nombre,Carrera) VALUES ('said','isc')
-    //mysql -hcontainers-us-west-111.railway.app -uroot -pYgMcaaHNUloLzFIO6Nse --port 7546 --protocol=TCP railway
-    //mysql://${{ MYSQLUSER }}:${{ MYSQLPASSWORD }}@${{ MYSQLHOST }}:${{ MYSQLPORT }}/${{ MYSQLDATABASE }}
-    //select * from t_estudiantes
+{       
     private $servidor="containers-us-west-109.railway.app";
     private $user="root";
     private $password="jTiFUSK45ifbd4d9A5kQ";
